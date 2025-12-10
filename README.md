@@ -18,7 +18,9 @@ Built with **Electron**, **React**, and **TypeScript**, it provides a modern, se
 
 ## Screenshots
 
-*(Screenshots to be added)*
+
+
+<img width="1136" height="840" alt="Image" src="https://github.com/user-attachments/assets/d4a1fb84-cf6a-4796-9b06-973ef3b26f49" />
 
 ## Installation
 
