@@ -14,6 +14,7 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
+import { registerIpcHandlers } from './ipcHandlers';
 
 class AppUpdater {
   constructor() {
@@ -24,6 +25,8 @@ class AppUpdater {
 }
 
 let mainWindow: BrowserWindow | null = null;
+
+registerIpcHandlers();
 
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
